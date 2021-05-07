@@ -118,6 +118,72 @@
             padding-left: 45px;
             padding-top: 20px;
         }
+        .soft_skills{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: white;
+        }
+        ol{
+            width: 500px;
+            list-style: none;
+            margin-left: 30px;
+        }
+        ol li{
+            font-size: 1.2rem;
+            padding: 20px 30px ;
+            margin: 10px 0;
+            background: rgb(23, 23, 23);
+            z-index: 100;
+            position: relative;
+            cursor: pointer;
+            transition: all .4s;
+            max-height: 8px;
+            line-height: 1.3rem;
+            display: flex;
+            align-items: center;
+        }
+        ol li::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            z-index: -1;
+            transition: all .4s;
+        }
+        ol li:hover::before{
+            width: 100%;
+        }
+        ol li:nth-child(1)::before{
+            background: #4285f4;
+        }
+        ol li:nth-child(2)::before{
+            background: #db4437;
+        }
+        ol li:nth-child(3)::before{
+            background: #0f9d58;
+        }
+        ol li:nth-child(4)::before{
+            background:  #f4b400;
+        }
+        ol li:nth-child(5)::before{
+            background: #ff3206;
+        }
+        ol li:hover{
+            transform: translateX(20px);
+        }
+        .soft_heading {
+            font-family: 'Satisfy';
+            font-weight: 10px;
+            font-size: 35px;
+            text-align: center;
+            line-height: 1.5;
+            color:#fffc33;
+            margin-top: 90px;
+        }
         .one .s_text{
             color: white;
             width: 100%;
@@ -169,7 +235,7 @@
           </div>
      <div class ="dc">
           </div>
-             </section>
+                </section>
              
              <h1> <p> Services </p> </h1>
              <section class="services">
@@ -216,26 +282,29 @@
 
       <div class = "lists">
       <div class="sub">
-        <img src="https://img.icons8.com/color/48/000000/python.png"/>
+        <img src="https://img.icons8.com/color/54/000000/python.png"/>
       </div>
       </div>
   
         <div class = "lists">
             <div class="sub">
-               <img src="https://img.icons8.com/color/64/000000/c-plus-plus-logo.png"/> 
+               <img src="https://img.icons8.com/color/60/000000/c-plus-plus-logo.png"/> 
             </div>
       </div>
   
         <div class = "lists">
             <div class="sub">
-              <img src="https://img.icons8.com/dusk/48/000000/java-coffee-cup-logo.png"/>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="60" height="60"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M80.625,5.375c-41.55943,0 -75.25,33.69057 -75.25,75.25c0,41.55943 33.69057,75.25 75.25,75.25c41.55943,0 75.25,-33.69057 75.25,-75.25c0,-41.55943 -33.69057,-75.25 -75.25,-75.25z" fill="#e1ebf2"></path><path d="M80.625,10.75c38.528,0 69.875,31.347 69.875,69.875c0,38.528 -31.347,69.875 -69.875,69.875c-38.528,0 -69.875,-31.347 -69.875,-69.875c0,-38.528 31.347,-69.875 69.875,-69.875M80.625,0c-44.5265,0 -80.625,36.0985 -80.625,80.625c0,44.5265 36.0985,80.625 80.625,80.625c44.5265,0 80.625,-36.0985 80.625,-80.625c0,-44.5265 -36.0985,-80.625 -80.625,-80.625z" fill="#b3b6bc"></path><path d="M80.625,21.5c-32.65384,0 -59.125,26.47116 -59.125,59.125c0,32.65384 26.47116,59.125 59.125,59.125c32.65384,0 59.125,-26.47116 59.125,-59.125c0,-32.65384 -26.47116,-59.125 -59.125,-59.125z" fill="#3c6f93"></path><g fill="#ffffff"><path d="M107.5,118.25h-13.49125l-11.10475,-20.1455c-0.99975,-1.849 -1.978,-3.44 -2.93475,-4.7515c-0.95675,-1.3115 -1.92425,-2.3865 -2.91325,-3.225c-0.989,-0.8385 -2.064,-1.45125 -3.225,-1.83825c-1.161,-0.387 -2.4725,-0.5805 -3.92375,-0.5805h-4.6655v30.54075h-11.49175v-75.25h22.8975c3.268,0 6.26725,0.41925 9.01925,1.25775c2.752,0.8385 5.1385,2.107 7.181,3.8055c2.0425,1.6985 3.6335,3.81625 4.773,6.35325c1.15025,2.537 1.72,5.504 1.72,8.89025c0,2.65525 -0.3655,5.0955 -1.0965,7.32075c-0.7095,2.22525 -1.7415,4.20325 -3.08525,5.934c-1.34375,1.73075 -2.967,3.2035 -4.859,4.429c-1.892,1.2255 -4.00975,2.1715 -6.37475,2.838v0.215c1.25775,0.774 2.365,1.6125 3.30025,2.54775c0.93525,0.91375 1.8275,1.8705 2.666,2.84875c0.8385,0.97825 1.677,2.0855 2.494,3.3325c0.82775,1.247 1.7415,2.6875 2.74125,4.33225zM65.24175,53.1265v24.45625h9.6105c1.7845,0 3.4185,-0.301 4.9235,-0.89225c1.505,-0.59125 2.80575,-1.45125 3.90225,-2.56925c1.0965,-1.118 1.9565,-2.48325 2.56925,-4.09575c0.61275,-1.6125 0.9245,-3.40775 0.9245,-5.40725c0,-3.60125 -1.0535,-6.41775 -3.14975,-8.4495c-2.107,-2.03175 -5.12775,-3.04225 -9.073,-3.04225z"></path></g></g></g></svg>
             </div>
       </div>
   
    
         <div class = "lists">
             <div class="sub">
-              <img src="https://img.icons8.com/plasticine/70/000000/react.png"/>
+              <img src="https://img.icons8.com/plasticine/65/000000/react.png"/>
             </div>
       </div>
   
@@ -245,6 +314,17 @@
             </div>
       </div>
         </div>
+
+        <h1 class =" soft_heading"> Software Skills  </h1>
+
+        <div class="soft_skills">
+            <ol>
+                <li>Tableau</li>
+                <li>Power BI</li>
+                <li>Excel</li>
+            </ol>
+        </div>
+
         <div class="ack">
             <div class="training">
            <h1> Trainings and Certifications</h1>
